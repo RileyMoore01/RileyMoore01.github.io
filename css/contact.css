@@ -11,12 +11,19 @@
     max-width: 25rem;
     display: center;
     margin: 20px;
+    top: 50%;
+    margin-right: -50%;
 }
 
 .email-body-box {
     margin: 20px;
     max-width: auto;
     width: 100%;
+    position: absolute;
+    left: 48%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin-top: calc((100vh / 2) / 4);
 }
 
 .submission-button {
@@ -27,7 +34,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    margin-top: calc((100vh / 2) / 2)
+    margin-top: calc((100vh / 2) / 1.65);
 
 }
 
@@ -46,7 +53,7 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .container-content {
