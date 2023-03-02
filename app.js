@@ -1,47 +1,22 @@
-let slideIndex = 0;
-let timeoutId = null;
-const slides = document.getElementsByClassName("mySlides");
-const dots = document.getElementsByClassName("dot");
-      
-showSlides();
-function currentSlide(index) {
-    slideIndex = index;
-    showSlides();
-}
-function plusSlides(step) {
+var slideIndex = 0;
+carousel();
 
-    if(step < 0) {
-        slideIndex -= 2;
-        
-        if(slideIndex < 0) {
-            slideIndex = slides.length - 1;
-        }
-    }
-
-    showSlides();
-}
-function showSlides() {
-    for(let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        dots[i].classList.remove('active');
-    }
-    slideIndex++;
-    if(slideIndex > slides.length) {
-        slideIndex = 1
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].classList.add('active');
-        if(timeoutId) {
-            clearTimeout(timeoutId);
-        }
-    timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
-// ---------------- End of space animation ----------------
-
-function githubRedirect() {
-    location.href = "https://github.com/RileyMoore01/Portfolio";
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
 function linkedinRedirect() {
-    location.href = "https://www.linkedin.com/in/riley-moore-659bb9169/";
+    window.location.href = "https://www.linkedin.com/in/riley-moore-659bb9169/";
+}
+
+function githubRedirect() {
+    window.location.href = "https://github.com/RileyMoore01/Portfolio";
 }
