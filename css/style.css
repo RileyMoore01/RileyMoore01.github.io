@@ -1,4 +1,8 @@
 /* Elements */
+html {
+    overflow: hidden;
+}
+
 body {
     max-height: 100vh;
     height: 100%;
@@ -8,10 +12,9 @@ body {
 
     font-family: Verdana, sans-serif;
     margin: 0;
-
+  
     background: radial-gradient(circle at bottom, navy 0, black 100%);
     height: 100vh;
-    overflow: hidden;
 }
 
 img {
@@ -30,10 +33,6 @@ img {
 .uk-navbar-nav>li>a,
 .uk-navbar-toggle {
     font-size: 1.5rem !important;
-}
-
-.body-container {
-    
 }
 
 .uk-navbar-right {
@@ -58,7 +57,6 @@ img {
     color: white;
     text-align: center;
     top: 0;
-    margin-bottom: 40px;
 }
 
 .redirect-container {
@@ -341,7 +339,7 @@ img {
 /* --- End Space Backgroung --- */
 
   /* Media Query for smaller screen sizes */
-  @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .slideshow-image {
         max-height: calc(100vh - 200px);
         height: 100%;
@@ -350,13 +348,12 @@ img {
 
     .redirect-container {
         padding: 20px;
-        position:absolute;
+        position: absolute;
         justify-content: center;
-        z-index: 900;
         bottom: 0;
     
         position: absolute;
-        top: 70%;
+        top: 90%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
