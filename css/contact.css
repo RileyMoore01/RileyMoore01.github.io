@@ -1,45 +1,4 @@
-.first-name-box {
-    margin: 20px
-}
-
-.last-name-box {
-    margin: 20px
-}
-
-.email-box {
-    width: 100%;
-    max-width: 25rem;
-    display: center;
-    margin: 20px;
-    top: 50%;
-    margin-right: -50%;
-}
-
-.email-body-box {
-    margin: 20px;
-    max-width: auto;
-    width: 100%;
-    position: absolute;
-    left: 48%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin-top: calc((100vh / 2) / 4);
-}
-
-.submission-button {
-    margin: 20px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    margin-top: calc((100vh / 2) / 1.65);
-
-}
-
 .contact-container {
-    z-index: 900;
     max-width: calc(100vw - 300px);
     width: 100%;
     min-height: 300px;
@@ -47,6 +6,7 @@
     height: 100%;
     border-radius: 25px;
     background-color: white;
+    text-align: center;
 
     /* display center */
     position: absolute;
@@ -57,18 +17,5 @@
 }
 
 .container-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-#get-in-touch {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    padding-bottom: calc((100vh / 2))
+    padding: 2rem;
 }
